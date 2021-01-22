@@ -1,9 +1,9 @@
-##Desafio de Frontend
+<h2>Desafio de Frontend</h2>
 
 <img src="../img/logo-clubpetro.png"
      alt="Clubpetro" width="300">
 
-##Instruções de instalação
+<h2>Instruções de instalação</h2>
 
 **1) Clonar e instalar dependências**
 - 1.1) Executar o comando: `git clone https://github.com/lucassp12/frontend-challenge`
