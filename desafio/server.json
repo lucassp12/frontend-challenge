@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "30f7b877-be72-4e23-bc3a-130e66dcb422",
+      "country": "Brasil",
+      "place": "Balneario Camboriu",
+      "goal": "04/2022",
+      "flag": "https://restcountries.eu/data/bra.svg"
+    },
+    {
+      "id": "2f34249c-5587-4975-89a2-0690e1227098",
+      "country": "Bolívia",
+      "place": "Salar de Uyuni",
+      "goal": "04/2023",
+      "flag": "https://restcountries.eu/data/bol.svg"
+    },
+    {
+      "id": "532bc580-8ce0-4e9e-aa0c-8e900158a6d4",
+      "country": "Brasil",
+      "place": "Fortaleza",
+      "goal": "05/2022",
+      "flag": "https://restcountries.eu/data/bra.svg"
+    },
+    {
+      "id": "7b7839df-b4f8-46ee-88dd-cfca0a08d7c2",
+      "country": "Estados Unidos",
+      "place": "Nova York",
+      "goal": "12/2022",
+      "flag": "https://restcountries.eu/data/usa.svg"
+    },
+    {
+      "id": "d8b06709-d0ce-4343-ae7a-46787d61499b",
+      "country": "Estados Unidos",
+      "place": "Filadélfia",
+      "goal": "12/2022",
+      "flag": "https://restcountries.eu/data/usa.svg"
+    },
+    {
+      "id": "2858ef14-16bf-4de7-a049-e6f401ac520c",
+      "country": "Emirados Árabes Unidos",
+      "place": "Dubai",
+      "goal": "01/2024",
+      "flag": "https://restcountries.eu/data/are.svg"
+    },
+    {
+      "id": "4eb2b8e6-2d7f-453c-9558-7e33c3df195f",
+      "country": "França",
+      "place": "París",
+      "goal": "04/2023",
+      "flag": "https://restcountries.eu/data/fra.svg"
+    },
+    {
+      "id": "3481689c-0912-437a-a33a-dc70812f26b9",
+      "country": "México",
+      "place": "Cancún",
+      "goal": "05/2022",
+      "flag": "https://restcountries.eu/data/mex.svg"
+    },
+    {
+      "id": "c7e6fe6a-1b91-407e-8936-f2845962d263",
+      "country": "Itália",
+      "place": "Veneza",
+      "goal": "12/2022",
+      "flag": "https://restcountries.eu/data/ita.svg"
+    },
+    {
+      "id": "4d052274-8dd1-45cb-9aab-7a8e85c7338b",
+      "country": "Estados Unidos",
+      "place": "Disney Word",
+      "goal": "12/2022",
+      "flag": "https://restcountries.eu/data/usa.svg"
+    }
+  ]
+}
