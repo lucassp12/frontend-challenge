@@ -10,9 +10,9 @@ import Alert, { IAlert } from '../../components/Alert';
 
 import { Container } from './styles';
 
-import ApiCountries from '../../services/ApiCountries';
+import ApiCountries from '../../services/countries';
 
-import { usePlaces, IPlace } from '../../hooks/placesContext';
+import { usePlaces, IPlace } from '../../contexts/places';
 
 interface ICountries {
   name: string;
@@ -58,15 +58,8 @@ const Dashboard: React.FC = () => {
   }
 
   function handleDeletePlace(id: string): void {
-    try {
-      deletePlace(id);
-      dispatchAlert({ type: 'success', message: 'Removido com sucesso!' });
-    } catch (err) {
-      dispatchAlert({
-        type: 'error',
-        message: 'Ocorreu um erro ao remover o local!',
-      });
-    }
+    deletePlace(id);
+    dispatchAlert({ type: 'success', message: 'Removido com sucesso!' });
   }
 
   return (

@@ -5,7 +5,7 @@ import InputMask from '../InputMask';
 import Button from '../Button';
 import Select from '../Select';
 
-import { usePlaces } from '../../hooks/placesContext';
+import { usePlaces } from '../../contexts/places';
 
 import { Container } from './styles';
 
@@ -36,7 +36,6 @@ const SearchArea: React.FC<ISearchAreaProps> = ({
 
   const handleSubmit = (evt: FormEvent): void => {
     evt.preventDefault();
-
     if (country === '' || place === '' || goal === '') {
       dispatchAlert({
         type: 'error',

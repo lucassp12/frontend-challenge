@@ -4,7 +4,7 @@ import { Container, ButtonsContainer, Button, ContainerHeader } from './styles';
 import EditIcon from '../../assets/Icons/edit.svg';
 import DeleteIcon from '../../assets/Icons/delete.svg';
 
-import { IPlace } from '../../hooks/placesContext';
+import { IPlace } from '../../contexts/places';
 
 interface ICardProps {
   place: IPlace;

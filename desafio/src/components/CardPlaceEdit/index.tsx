@@ -3,7 +3,7 @@ import React, { useState, MouseEvent } from 'react';
 import InputMask from 'react-input-mask';
 import DeleteIcon from '../../assets/Icons/delete.svg';
 
-import { IPlace, usePlaces } from '../../hooks/placesContext';
+import { IPlace, usePlaces } from '../../contexts/places';
 
 import { Container, ButtonsContainer, ContainerHeader } from './styles';
 
@@ -59,7 +59,8 @@ const CardPlaceEdit: React.FC<ICardProps> = ({
           type="text"
           defaultValue={place.place}
           onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
-            setPlaceEdit(event.target.value)}
+            setPlaceEdit(event.target.value)
+          }
         />
       </span>
       <span>

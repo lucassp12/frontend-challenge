@@ -6,7 +6,7 @@ import React, {
   useContext,
 } from 'react';
 
-import ApiPlaces from '../services/ApiPlaces';
+import ApiPlaces from '../services/places';
 
 export interface IPlace {
   id: string;
@@ -32,9 +32,9 @@ export const PlacesProvider: React.FC = ({ children }) => {
 
   useEffect(() => {
     async function loadPlaces(): Promise<void> {
-      await ApiPlaces.get('/places').then(response => {
-        setPlaces(response.data);
-      });
+      const response = await ApiPlaces.get('/places');
+
+      setPlaces(response.data);
     }
     loadPlaces();
   }, []);
@@ -48,9 +48,7 @@ export const PlacesProvider: React.FC = ({ children }) => {
         place,
         goal,
       };
-
       ApiPlaces.post('places', data);
-
       setPlaces([...places, data]);
     },
     [places],
@@ -69,8 +67,8 @@ export const PlacesProvider: React.FC = ({ children }) => {
     (id: string) => {
       ApiPlaces.delete(`/places/${id}`);
 
-      const placesFiltred = places.filter(p => {
-        return p.id !== id;
+      const placesFiltred = places.filter(place => {
+        return place.id !== id;
       });
 
       setPlaces(placesFiltred);

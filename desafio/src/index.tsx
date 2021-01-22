@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-import { PlacesProvider } from './hooks/placesContext';
+import { PlacesProvider } from './contexts/places';
 
 ReactDOM.render(
   <React.StrictMode>
